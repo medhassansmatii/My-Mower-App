@@ -1,0 +1,55 @@
+
+<form class="container" #form1="ngForm" (ngSubmit)="onSubmit()">
+
+	<h3>Please enter your command :</h3>
+	<mat-form-field appearance="fill">
+		<mat-label>enter position X</mat-label>
+		<input matInput type="text" name="x" id="x" [(ngModel)]="etat.tondeuse.positionX" /> 
+	</mat-form-field>
+	<mat-form-field appearance="fill">
+		<mat-label>enter position Y</mat-label>
+		<input matInput type="text" name="y" id="y" [(ngModel)]="etat.tondeuse.positionY" />
+	</mat-form-field>
+	<br>
+	<mat-form-field appearance="fill">
+		<mat-label>Select direction</mat-label>
+		<input matInput type="text" name="direction" id="direction" [(ngModel)]="etat.tondeuse.direction" />
+	</mat-form-field>
+	<mat-form-field appearance="fill">
+		<mat-label>inf Gauche </mat-label>
+		<input matInput type="text" name="infGauche" id="x" [(ngModel)]="etat.gazon.infGauche" />
+	</mat-form-field>
+	<br>
+	<mat-form-field appearance="fill">
+		<mat-label>sup Droite </mat-label>
+		<input matInput type="text" name="supDroite" id="x" [(ngModel)]="etat.gazon.supDroite" />
+	</mat-form-field>
+	<mat-form-field appearance="fill">
+		<mat-label>Commande </mat-label>
+		<input matInput type="text" name="commande" id="commande" [(ngModel)]="etat._commande" />
+		</mat-form-field>
+		<br>
+
+		
+		<h3>final Position :</h3>
+
+		<mat-form-field appearance="fill">
+			<mat-label>X final : </mat-label>
+			<input matInput type="text" name="Xfinal" id="Xfinal" [(ngModel)]="Xfinal" />
+		</mat-form-field>
+		<mat-form-field appearance="fill">
+			<mat-label>Y final : </mat-label>
+			<input matInput type="text" name="Yfinal" id="Yfinal" [(ngModel)]="Yfinal" />
+		</mat-form-field>
+		<mat-form-field appearance="fill">
+			<mat-label>Direction finale :</mat-label>
+			<input matInput type="text" name="directionFinale" id="directionFinale"
+		[(ngModel)]="directionFinale" />
+			</mat-form-field>
+			<br>
+	
+
+	<button mat-raised-button color="primary" type="submit">Envoyer la commande</button>
+
+
+</form>

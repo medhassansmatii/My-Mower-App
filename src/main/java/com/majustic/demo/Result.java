@@ -7,7 +7,7 @@
 package com.majustic.demo;
 //ici ajouter les getters et les setters, des constructeurs,
 //on peut utiliser lombok
-public class Result
+class Result
 {	
 	public int positionX;
 	public int positionY;
