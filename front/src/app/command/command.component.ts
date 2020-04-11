@@ -41,12 +41,5 @@ export class CommandComponent implements OnInit {
 		    );	
   	}
 	
-	getLog(){
-		let url:string;
-		url="http://127.0.0.1:8080/log";
-		this.http.get<any>(url).subscribe(
-		      (res) => {console.log(res); },
-		      (err) => {console.log(err);}
-		    );	
-	}
+	
 }
