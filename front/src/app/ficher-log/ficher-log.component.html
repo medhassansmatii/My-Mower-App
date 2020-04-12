@@ -1,1 +1,14 @@
+<div class="container">
+    <br/>
+    <br/>
 <button type="button" mat-raised-button color="primary" (click)="getLog()">Afficher le Log</button>
+ <button type="button" mat-raised-button color="warn" (click)="deleteLog()">Supprimer le Log</button>   
+ <br/>
+ <br/>
+ <br/>
+ <button mat-fab disabled color="primary" for="log">Log:</button>
+  <br/>
+   
+    <textarea  id="log" name="log" rows="20" cols="55" [(ngModel)]="txtlog" ></textarea>
+
+</div>
