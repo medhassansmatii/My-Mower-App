@@ -20,7 +20,7 @@ export class CommandComponent implements OnInit {
 
   
 
-  etat=datax;
+   etat=datax;
  	Xfinal:number;
 	Yfinal :number;
 	directionFinale:string;
